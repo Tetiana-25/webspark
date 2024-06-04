@@ -1,0 +1,430 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 876px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+body{
+    background: #FAFAFA;
+    position: relative;
+}
+
+.body-bg, .bottom-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    z-index: -1;
+}
+
+.bottom-bg{
+    top: unset;
+    left: unset;
+    bottom: 41px;
+    right: 0;
+}
+
+
+header{
+    width: 100%;
+    height: 172px;
+    background: rgba(255, 255, 255, 0.67);
+    box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.12) inset, 0px 4px 24px 0px rgba(0, 0, 0, 0.12);
+    padding: 6px 0px 31px 55px;
+}
+
+.header__wrapper{
+    display: flex;
+    gap: 86px;
+}
+.header__right{
+    margin-top: 27px;
+}
+
+.header__top{
+    display: flex;
+    align-items: center;
+    gap: 10px 16px;
+    flex-wrap: wrap;
+}
+
+.header__title{
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+
+.header__start{
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 2px;
+    border: 1px solid #3D8EDA;
+    color: #3D8EDA;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.39px;
+}
+
+.header__info{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+.header__info-item{
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+.header__info-item span{
+    font-weight: 700;
+}
+.header__info-item:first-child{
+    margin-right: 28px;
+}
+.header__info-item:nth-child(2){
+    margin-right: 17px;
+}
+.header__dates{
+    margin-top: 19px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.header__date-title{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 11px;
+}
+
+.header__date-from,
+.header__date-to{
+    position: relative;
+}
+.header__date-to{
+    margin-left: 22px;
+}
+
+.header__date-from input,
+.header__date-to input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 4px;
+    border: 1px solid #DEDEDE;
+    height: 28px;
+    padding: 7px 8px;
+    color: #636264;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+input:focus,
+input:focus-visible,
+input:active{
+    outline: none;
+}
+
+.calendar-icon, .delete-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 28px;
+    width: 28px;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #DEDEDE;
+    background-color: #EBEBEB;
+    cursor: pointer;
+}
+
+.calendar-icon{
+    pointer-events: none;
+}
+
+.delete-icon{
+    right: 28px;
+    border-right: none;
+    border-radius: 0;
+}
+
+.air-datepicker-nav--title, .air-datepicker-nav--title i{
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    font-family: 'Roboto';
+}
+
+.air-datepicker-body--day-name{
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: 'Roboto';
+}
+.air-datepicker-cell{
+    width: 23px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.air-datepicker-cell.-year-.-other-decade-, .air-datepicker-cell.-day-.-other-month-{
+    color: #929292;
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.air-datepicker-cell.-current-, .air-datepicker-cell.-selected-{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #3D8EDA !important;
+}
+
+.air-datepicker-nav--action svg {
+    width: 14px;
+    height: 14px;
+}
+
+.air-datepicker-nav--action path{
+    fill: #000000;
+    stroke:none;
+}
+
+
+/* List */
+.account-list{
+    padding-top: 18px;
+    padding-bottom: 61px;
+}
+
+.account-list__sort{
+    width: fit-content;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.account-list__tiles, .account-list__rows{
+    cursor: pointer;
+    display: flex;
+}
+
+.account-list__tiles.active rect, .account-list__rows.active rect{
+    fill: #3D8EDA;
+    fill: #C8C8C8;
+}
+
+.account-list__items{
+    margin-top: 23px;
+}
+
+.account-list__item{
+    background: #FFF;
+    display: grid;
+    grid-template-columns: 86px 1fr 0.3fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.account-left__top, .account-left__bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.account-right__top, .account-left__top, .account-left__bottom, .account-right__bottom{
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+.account-left__bottom, .account-right__bottom{
+    margin-top: 8px;
+}
+
+.account-left__bottom--first, .account-left__bottom--second{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.account-left_likes, .account-left_comments{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.account-left_icon{
+    display: flex;
+}
+
+.account-image{
+    display: flex;
+}
+
+.account-image img{
+    width: 86px;
+    height: 86px;
+    object-fit: cover;
+}
+
+.account-list__items{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.load-more{
+    margin-top: 33px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 14px;
+    border: 1px solid #929292;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 26px;
+    color: #929292;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.33px;
+    cursor: pointer;
+}
+
+.display-tiles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px 8px;
+}
+
+.display-tiles .account-list__item{
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+.display-tiles .account-image img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.display-tiles .account-left__top{
+    padding: 12px 12px 0 12px;
+}
+
+.display-tiles .account-left__top, .display-tiles .account-left__bottom, .display-tiles .account-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.display-tiles .account-left__bottom--first, .display-tiles .account-left__bottom--second{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.display-tiles .account-right{
+    padding: 24px 11px 18px 12px;
+}
+
+.display-tiles .account-right__top{
+    font-size: 14px;
+}
+.display-tiles .account-right__bottom{
+    font-size: 12px;
+    margin-top: 0;
+}
+
+@media (max-width: 991px){
+    header{
+        padding-left: 0;
+        height: auto;
+    }
+    .header__wrapper{
+        gap: 50px;
+    }
+    .display-tiles{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .account-left_comments{
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 768px){
+    .body-bg svg{
+        width: 100%;
+        height: auto;
+    }
+    .account-list__sort{
+        display: none;
+    }
+    .display-tiles{
+        grid-template-columns: 1fr 1fr;
+    }
+    .header__wrapper{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header__right{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 576px){
+    .display-tiles{
+        grid-template-columns: 1fr;
+    }
+    .header__dates{
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .header__date-title{
+        margin-right: 0;
+    }
+    .header__date-from input, .header__date-to input,  .header__date-from, .header__date-to{
+        width: 100%;
+    }
+    .header__date-to{
+        margin-left: 0;
+    }
+}
