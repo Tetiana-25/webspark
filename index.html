@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monblan Project</title>
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/air-datepicker.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="body-bg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="630" height="398" viewBox="0 0 630 398" fill="none">
+            <path
+                d="M143 351C85.8 414.2 23.8333 399.667 0 384.5L-59 308L-54 1.5L287.5 -84.5L630 -3.5C582.4 11.7 571 23 564.5 52C553.49 101.12 525.333 156 511.5 169.5C457.5 243 363.5 215.5 307 214.5C250.5 213.5 212.5 229.5 191.5 271C175.499 302.622 154 338.167 143 351Z"
+                fill="url(#paint0_linear_2_32)" />
+            <defs>
+                <linearGradient id="paint0_linear_2_32" x1="536.5" y1="-84" x2="54.5" y2="398"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#40AF79" offset="0"/>
+                    <stop offset="1" stop-color="#124757" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+    <header>
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="138" height="138" viewBox="0 0 138 138" fill="none">
+                        <path
+                            d="M56.5 7.21688C64.235 2.75106 73.765 2.75106 81.5 7.21688L116.256 27.2831C123.991 31.7489 128.756 40.0021 128.756 48.9338V89.0662C128.756 97.9979 123.991 106.251 116.256 110.717L81.5 130.783C73.765 135.249 64.235 135.249 56.5 130.783L21.7442 110.717C14.0092 106.251 9.24425 97.9979 9.24425 89.0662V48.9338C9.24425 40.0021 14.0092 31.7489 21.7442 27.2831L56.5 7.21688Z"
+                            fill="white" />
+                        <path
+                            d="M128.756 88.5317V89.0662C128.756 97.9979 123.991 106.251 116.256 110.717L81.5 130.783C73.765 135.249 64.235 135.249 56.5 130.783L21.7442 110.717C21.1716 110.386 20.6152 110.035 20.0758 109.664L17.5 101L26 68L33.5 56L55.5 78.5L82.5 38.5L128.756 88.5317Z"
+                            fill="#066C61" />
+                        <path
+                            d="M18.1726 108.216C14.6282 105.242 11.9954 101.354 10.5392 97.0092L10.5 96.5C11.6667 83.5 16.7 56.8 27.5 54C41.5 50.3704 48.5 96.5 48.5 96.5C48.5 96.5 54.7204 32.2561 74 33.5C89.5 34.5 95.5 66.5 91.5 125L91.4793 125.022L81.5 130.783C78.1083 132.741 74.3715 133.841 70.5923 134.082C77.5658 121.943 76.9064 74.0186 73.5 56.5C71.5082 62.0157 69.939 70.5009 68.2456 79.6574C64.4128 100.382 59.9439 124.546 48.5 125.5C48.0761 125.535 47.6559 125.513 47.2396 125.437L43.4536 123.251C36.248 116.272 30.6804 94.8558 28.5 83C28.103 93.7194 24.061 105.982 22.0451 110.891L21.7442 110.717C21.4834 110.566 21.2259 110.411 20.9718 110.252L18.1726 108.216Z"
+                            fill="#B3DBC9" />
+                    </svg>
+                </div>
+                <div class="header__right">
+                    <div class="header__top">
+                        <div class="header__title">monblanproject</div>
+                        <div class="header__start">
+                            Start on 17-02-2016
+                        </div>
+                    </div>
+                    <div class="header__info">
+                        <div class="header__info-item">
+                            <span>870</span> posts
+                        </div>
+                        <div class="header__info-item">
+                            <span>11,787 </span>followers
+                        </div>
+                        <div class="header__info-item">
+                            <span>112 </span>following
+                        </div>
+                    </div>
+                    <div class="header__dates">
+                        <div class="header__date-title">Date</div>
+                        <div class="header__date-from">
+                            <input type="text" id="date-from" placeholder="from">
+                            <div class="delete-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M17.6569 16.2426L13.4142 12L17.6569 7.75736L16.2426 6.34315L12 10.5858L7.75736 6.34315L6.34315 7.75736L10.5858 12L6.34315 16.2426L7.75736 17.6569L12 13.4142L16.2426 17.6569L17.6569 16.2426Z"
+                                        fill="#5F5F5F" />
+                                </svg>
+                            </div>
+                            <div class="calendar-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M7 11H9V13H7V11ZM7 15H9V17H7V15ZM11 11H13V13H11V11ZM11 15H13V17H11V15ZM15 11H17V13H15V11ZM15 15H17V17H15V15Z"
+                                        fill="#5F5F5F" />
+                                    <path
+                                        d="M5 22H19C20.103 22 21 21.103 21 20V6C21 4.897 20.103 4 19 4H17V2H15V4H9V2H7V4H5C3.897 4 3 4.897 3 6V20C3 21.103 3.897 22 5 22ZM19 8L19.001 20H5V8H19Z"
+                                        fill="#5F5F5F" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="header__date-to">
+                            <input type="text" id="date-to" placeholder="to">
+                            <div class="delete-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M17.6569 16.2426L13.4142 12L17.6569 7.75736L16.2426 6.34315L12 10.5858L7.75736 6.34315L6.34315 7.75736L10.5858 12L6.34315 16.2426L7.75736 17.6569L12 13.4142L16.2426 17.6569L17.6569 16.2426Z"
+                                        fill="#5F5F5F" />
+                                </svg>
+                            </div>
+                            <div class="calendar-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M7 11H9V13H7V11ZM7 15H9V17H7V15ZM11 11H13V13H11V11ZM11 15H13V17H11V15ZM15 11H17V13H15V11ZM15 15H17V17H15V15Z"
+                                        fill="#5F5F5F" />
+                                    <path
+                                        d="M5 22H19C20.103 22 21 21.103 21 20V6C21 4.897 20.103 4 19 4H17V2H15V4H9V2H7V4H5C3.897 4 3 4.897 3 6V20C3 21.103 3.897 22 5 22ZM19 8L19.001 20H5V8H19Z"
+                                        fill="#5F5F5F" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="account-list">
+            <div class="container">
+                <div class="account-list__sort">
+                    <div class="account-list__tiles active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                            <rect width="6" height="6" fill="#3D8EDA"/>
+                            <rect x="8" width="6" height="6" fill="#3D8EDA"/>
+                            <rect x="16" width="6" height="6" fill="#3D8EDA"/>
+                            <rect y="8" width="6" height="6" fill="#3D8EDA"/>
+                            <rect y="16" width="6" height="6" fill="#3D8EDA"/>
+                            <rect x="8" y="8" width="6" height="6" fill="#3D8EDA"/>
+                            <rect x="8" y="16" width="6" height="6" fill="#3D8EDA"/>
+                            <rect x="16" y="8" width="6" height="6" fill="#3D8EDA"/>
+                            <rect x="16" y="16" width="6" height="6" fill="#3D8EDA"/>
+                        </svg>
+                    </div>
+                    <div class="account-list__rows">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+                            <rect width="6" height="6" fill="#3D8EDA"/>
+                            <rect y="8" width="6" height="6" fill="#3D8EDA"/>
+                            <rect y="16" width="6" height="6" fill="#3D8EDA"/>
+                            <rect x="9" y="10" width="15" height="2" fill="#3D8EDA"/>
+                            <rect x="9" y="18" width="15" height="2" fill="#3D8EDA"/>
+                            <rect x="9" y="2" width="15" height="2" fill="#3D8EDA"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="account-list__items display-tiles">
+                    <div class="account-list__item">
+                        <div class="account-image">
+                            <img width="86" height="86" src="img/image1.webp" alt="">
+                        </div>
+                        <div class="account-left">
+                            <div class="account-left__top">
+                                <div class="account-left_today">
+                                    Today
+                                </div>
+                                <div class="account-left_date">
+                                    9-08-2016
+                                </div>
+                            </div>
+                            <div class="account-left__bottom">
+                                <div class="account-left__bottom--first">
+                                    <div class="account-left_likes">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M1.5 6.3C1.49991 5.76177 1.6071 5.22893 1.8153 4.73261C2.02351 4.23629 2.32855 3.78644 2.71261 3.40937C3.09667 3.03229 3.55203 2.73555 4.05209 2.53649C4.55215 2.33742 5.08687 2.24003 5.625 2.25C6.26172 2.24662 6.89189 2.3786 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.75C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.3786 11.7383 2.24662 12.375 2.25C12.9131 2.24003 13.4479 2.33742 13.9479 2.53649C14.448 2.73555 14.9033 3.03229 15.2874 3.40937C15.6714 3.78644 15.9765 4.23629 16.1847 4.73261C16.3929 5.22893 16.5001 5.76177 16.5 6.3C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>128</span>
+                                    </div>
+                                    <div class="account-left_comments">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>31</span>
+                                    </div>
+                                </div>
+                                <div class="account-left__bottom--second">
+                                    <div class="account-left_likes">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M1.5 6.3C1.49991 5.76177 1.6071 5.22893 1.8153 4.73261C2.02351 4.23629 2.32855 3.78644 2.71261 3.40937C3.09667 3.03229 3.55203 2.73555 4.05209 2.53649C4.55215 2.33742 5.08687 2.24003 5.625 2.25C6.26172 2.24662 6.89189 2.3786 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.75C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.3786 11.7383 2.24662 12.375 2.25C12.9131 2.24003 13.4479 2.33742 13.9479 2.53649C14.448 2.73555 14.9033 3.03229 15.2874 3.40937C15.6714 3.78644 15.9765 4.23629 16.1847 4.73261C16.3929 5.22893 16.5001 5.76177 16.5 6.3C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>67</span>
+                                    </div>
+                                    <div class="account-left_comments">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>22</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-right">
+                            <div class="account-right__top">Image upload</div>
+                            <div class="account-right__bottom">11-04-2016</div>
+                        </div>
+                    </div>
+                    <div class="account-list__item">
+                        <div class="account-image">
+                            <img width="86" height="86" src="img/image2.webp" alt="">
+                        </div>
+                        <div class="account-left">
+                            <div class="account-left__top">
+                                <div class="account-left_today">
+                                    Today
+                                </div>
+                                <div class="account-left_date">
+                                    9-08-2016
+                                </div>
+                            </div>
+                            <div class="account-left__bottom">
+                                <div class="account-left__bottom--first">
+                                    <div class="account-left_likes">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M1.5 6.3C1.49991 5.76177 1.6071 5.22893 1.8153 4.73261C2.02351 4.23629 2.32855 3.78644 2.71261 3.40937C3.09667 3.03229 3.55203 2.73555 4.05209 2.53649C4.55215 2.33742 5.08687 2.24003 5.625 2.25C6.26172 2.24662 6.89189 2.3786 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.75C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.3786 11.7383 2.24662 12.375 2.25C12.9131 2.24003 13.4479 2.33742 13.9479 2.53649C14.448 2.73555 14.9033 3.03229 15.2874 3.40937C15.6714 3.78644 15.9765 4.23629 16.1847 4.73261C16.3929 5.22893 16.5001 5.76177 16.5 6.3C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>128</span>
+                                    </div>
+                                    <div class="account-left_comments">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>31</span>
+                                    </div>
+                                </div>
+                                <div class="account-left__bottom--second">
+                                    <div class="account-left_likes">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M1.5 6.3C1.49991 5.76177 1.6071 5.22893 1.8153 4.73261C2.02351 4.23629 2.32855 3.78644 2.71261 3.40937C3.09667 3.03229 3.55203 2.73555 4.05209 2.53649C4.55215 2.33742 5.08687 2.24003 5.625 2.25C6.26172 2.24662 6.89189 2.3786 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.75C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.3786 11.7383 2.24662 12.375 2.25C12.9131 2.24003 13.4479 2.33742 13.9479 2.53649C14.448 2.73555 14.9033 3.03229 15.2874 3.40937C15.6714 3.78644 15.9765 4.23629 16.1847 4.73261C16.3929 5.22893 16.5001 5.76177 16.5 6.3C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>67</span>
+                                    </div>
+                                    <div class="account-left_comments">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>22</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-right">
+                            <div class="account-right__top">Image upload</div>
+                            <div class="account-right__bottom">11-04-2016</div>
+                        </div>
+                    </div>
+                    <div class="account-list__item">
+                        <div class="account-image">
+                            <img width="86" height="86" src="img/image3.webp" alt="">
+                        </div>
+                        <div class="account-left">
+                            <div class="account-left__top">
+                                <div class="account-left_today">
+                                    Today
+                                </div>
+                                <div class="account-left_date">
+                                    9-08-2016
+                                </div>
+                            </div>
+                            <div class="account-left__bottom">
+                                <div class="account-left__bottom--first">
+                                    <div class="account-left_likes">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M1.5 6.3C1.49991 5.76177 1.6071 5.22893 1.8153 4.73261C2.02351 4.23629 2.32855 3.78644 2.71261 3.40937C3.09667 3.03229 3.55203 2.73555 4.05209 2.53649C4.55215 2.33742 5.08687 2.24003 5.625 2.25C6.26172 2.24662 6.89189 2.3786 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.75C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.3786 11.7383 2.24662 12.375 2.25C12.9131 2.24003 13.4479 2.33742 13.9479 2.53649C14.448 2.73555 14.9033 3.03229 15.2874 3.40937C15.6714 3.78644 15.9765 4.23629 16.1847 4.73261C16.3929 5.22893 16.5001 5.76177 16.5 6.3C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>128</span>
+                                    </div>
+                                    <div class="account-left_comments">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>31</span>
+                                    </div>
+                                </div>
+                                <div class="account-left__bottom--second">
+                                    <div class="account-left_likes">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M1.5 6.3C1.49991 5.76177 1.6071 5.22893 1.8153 4.73261C2.02351 4.23629 2.32855 3.78644 2.71261 3.40937C3.09667 3.03229 3.55203 2.73555 4.05209 2.53649C4.55215 2.33742 5.08687 2.24003 5.625 2.25C6.26172 2.24662 6.89189 2.3786 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.75C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.3786 11.7383 2.24662 12.375 2.25C12.9131 2.24003 13.4479 2.33742 13.9479 2.53649C14.448 2.73555 14.9033 3.03229 15.2874 3.40937C15.6714 3.78644 15.9765 4.23629 16.1847 4.73261C16.3929 5.22893 16.5001 5.76177 16.5 6.3C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>67</span>
+                                    </div>
+                                    <div class="account-left_comments">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>22</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-right">
+                            <div class="account-right__top">Image upload</div>
+                            <div class="account-right__bottom">11-04-2016</div>
+                        </div>
+                    </div>
+                    <div class="account-list__item">
+                        <div class="account-image">
+                            <img width="86" height="86" src="img/image4.webp" alt="">
+                        </div>
+                        <div class="account-left">
+                            <div class="account-left__top">
+                                <div class="account-left_today">
+                                    Today
+                                </div>
+                                <div class="account-left_date">
+                                    9-08-2016
+                                </div>
+                            </div>
+                            <div class="account-left__bottom">
+                                <div class="account-left__bottom--first">
+                                    <div class="account-left_likes">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M1.5 6.3C1.49991 5.76177 1.6071 5.22893 1.8153 4.73261C2.02351 4.23629 2.32855 3.78644 2.71261 3.40937C3.09667 3.03229 3.55203 2.73555 4.05209 2.53649C4.55215 2.33742 5.08687 2.24003 5.625 2.25C6.26172 2.24662 6.89189 2.3786 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.75C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.3786 11.7383 2.24662 12.375 2.25C12.9131 2.24003 13.4479 2.33742 13.9479 2.53649C14.448 2.73555 14.9033 3.03229 15.2874 3.40937C15.6714 3.78644 15.9765 4.23629 16.1847 4.73261C16.3929 5.22893 16.5001 5.76177 16.5 6.3C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>128</span>
+                                    </div>
+                                    <div class="account-left_comments">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>31</span>
+                                    </div>
+                                </div>
+                                <div class="account-left__bottom--second">
+                                    <div class="account-left_likes">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M1.5 6.3C1.49991 5.76177 1.6071 5.22893 1.8153 4.73261C2.02351 4.23629 2.32855 3.78644 2.71261 3.40937C3.09667 3.03229 3.55203 2.73555 4.05209 2.53649C4.55215 2.33742 5.08687 2.24003 5.625 2.25C6.26172 2.24662 6.89189 2.3786 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.75C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.3786 11.7383 2.24662 12.375 2.25C12.9131 2.24003 13.4479 2.33742 13.9479 2.53649C14.448 2.73555 14.9033 3.03229 15.2874 3.40937C15.6714 3.78644 15.9765 4.23629 16.1847 4.73261C16.3929 5.22893 16.5001 5.76177 16.5 6.3C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>67</span>
+                                    </div>
+                                    <div class="account-left_comments">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>22</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-right">
+                            <div class="account-right__top">Image upload</div>
+                            <div class="account-right__bottom">11-04-2016</div>
+                        </div>
+                    </div>
+                    <div class="account-list__item">
+                        <div class="account-image">
+                            <img width="86" height="86" src="img/image5.webp" alt="">
+                        </div>
+                        <div class="account-left">
+                            <div class="account-left__top">
+                                <div class="account-left_today">
+                                    Today
+                                </div>
+                                <div class="account-left_date">
+                                    9-08-2016
+                                </div>
+                            </div>
+                            <div class="account-left__bottom">
+                                <div class="account-left__bottom--first">
+                                    <div class="account-left_likes">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M1.5 6.3C1.49991 5.76177 1.6071 5.22893 1.8153 4.73261C2.02351 4.23629 2.32855 3.78644 2.71261 3.40937C3.09667 3.03229 3.55203 2.73555 4.05209 2.53649C4.55215 2.33742 5.08687 2.24003 5.625 2.25C6.26172 2.24662 6.89189 2.3786 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.75C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.3786 11.7383 2.24662 12.375 2.25C12.9131 2.24003 13.4479 2.33742 13.9479 2.53649C14.448 2.73555 14.9033 3.03229 15.2874 3.40937C15.6714 3.78644 15.9765 4.23629 16.1847 4.73261C16.3929 5.22893 16.5001 5.76177 16.5 6.3C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>128</span>
+                                    </div>
+                                    <div class="account-left_comments">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>31</span>
+                                    </div>
+                                </div>
+                                <div class="account-left__bottom--second">
+                                    <div class="account-left_likes">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M1.5 6.3C1.49991 5.76177 1.6071 5.22893 1.8153 4.73261C2.02351 4.23629 2.32855 3.78644 2.71261 3.40937C3.09667 3.03229 3.55203 2.73555 4.05209 2.53649C4.55215 2.33742 5.08687 2.24003 5.625 2.25C6.26172 2.24662 6.89189 2.3786 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.75C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.3786 11.7383 2.24662 12.375 2.25C12.9131 2.24003 13.4479 2.33742 13.9479 2.53649C14.448 2.73555 14.9033 3.03229 15.2874 3.40937C15.6714 3.78644 15.9765 4.23629 16.1847 4.73261C16.3929 5.22893 16.5001 5.76177 16.5 6.3C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>67</span>
+                                    </div>
+                                    <div class="account-left_comments">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>22</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-right">
+                            <div class="account-right__top">Image upload</div>
+                            <div class="account-right__bottom">11-04-2016</div>
+                        </div>
+                    </div>
+                    <div class="account-list__item">
+                        <div class="account-image">
+                            <img width="86" height="86" src="img/image6.webp" alt="">
+                        </div>
+                        <div class="account-left">
+                            <div class="account-left__top">
+                                <div class="account-left_today">
+                                    Today
+                                </div>
+                                <div class="account-left_date">
+                                    9-08-2016
+                                </div>
+                            </div>
+                            <div class="account-left__bottom">
+                                <div class="account-left__bottom--first">
+                                    <div class="account-left_likes">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M1.5 6.3C1.49991 5.76177 1.6071 5.22893 1.8153 4.73261C2.02351 4.23629 2.32855 3.78644 2.71261 3.40937C3.09667 3.03229 3.55203 2.73555 4.05209 2.53649C4.55215 2.33742 5.08687 2.24003 5.625 2.25C6.26172 2.24662 6.89189 2.3786 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.75C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.3786 11.7383 2.24662 12.375 2.25C12.9131 2.24003 13.4479 2.33742 13.9479 2.53649C14.448 2.73555 14.9033 3.03229 15.2874 3.40937C15.6714 3.78644 15.9765 4.23629 16.1847 4.73261C16.3929 5.22893 16.5001 5.76177 16.5 6.3C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>128</span>
+                                    </div>
+                                    <div class="account-left_comments">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>31</span>
+                                    </div>
+                                </div>
+                                <div class="account-left__bottom--second">
+                                    <div class="account-left_likes">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M1.5 6.3C1.49991 5.76177 1.6071 5.22893 1.8153 4.73261C2.02351 4.23629 2.32855 3.78644 2.71261 3.40937C3.09667 3.03229 3.55203 2.73555 4.05209 2.53649C4.55215 2.33742 5.08687 2.24003 5.625 2.25C6.26172 2.24662 6.89189 2.3786 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.75C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.3786 11.7383 2.24662 12.375 2.25C12.9131 2.24003 13.4479 2.33742 13.9479 2.53649C14.448 2.73555 14.9033 3.03229 15.2874 3.40937C15.6714 3.78644 15.9765 4.23629 16.1847 4.73261C16.3929 5.22893 16.5001 5.76177 16.5 6.3C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>67</span>
+                                    </div>
+                                    <div class="account-left_comments">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>22</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-right">
+                            <div class="account-right__top">Image upload</div>
+                            <div class="account-right__bottom">11-04-2016</div>
+                        </div>
+                    </div>
+                    <div class="account-list__item">
+                        <div class="account-image">
+                            <img width="86" height="86" src="img/image7.webp" alt="">
+                        </div>
+                        <div class="account-left">
+                            <div class="account-left__top">
+                                <div class="account-left_today">
+                                    Today
+                                </div>
+                                <div class="account-left_date">
+                                    9-08-2016
+                                </div>
+                            </div>
+                            <div class="account-left__bottom">
+                                <div class="account-left__bottom--first">
+                                    <div class="account-left_likes">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M1.5 6.3C1.49991 5.76177 1.6071 5.22893 1.8153 4.73261C2.02351 4.23629 2.32855 3.78644 2.71261 3.40937C3.09667 3.03229 3.55203 2.73555 4.05209 2.53649C4.55215 2.33742 5.08687 2.24003 5.625 2.25C6.26172 2.24662 6.89189 2.3786 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.75C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.3786 11.7383 2.24662 12.375 2.25C12.9131 2.24003 13.4479 2.33742 13.9479 2.53649C14.448 2.73555 14.9033 3.03229 15.2874 3.40937C15.6714 3.78644 15.9765 4.23629 16.1847 4.73261C16.3929 5.22893 16.5001 5.76177 16.5 6.3C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>128</span>
+                                    </div>
+                                    <div class="account-left_comments">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>31</span>
+                                    </div>
+                                </div>
+                                <div class="account-left__bottom--second">
+                                    <div class="account-left_likes">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M1.5 6.3C1.49991 5.76177 1.6071 5.22893 1.8153 4.73261C2.02351 4.23629 2.32855 3.78644 2.71261 3.40937C3.09667 3.03229 3.55203 2.73555 4.05209 2.53649C4.55215 2.33742 5.08687 2.24003 5.625 2.25C6.26172 2.24662 6.89189 2.3786 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.75C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.3786 11.7383 2.24662 12.375 2.25C12.9131 2.24003 13.4479 2.33742 13.9479 2.53649C14.448 2.73555 14.9033 3.03229 15.2874 3.40937C15.6714 3.78644 15.9765 4.23629 16.1847 4.73261C16.3929 5.22893 16.5001 5.76177 16.5 6.3C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>67</span>
+                                    </div>
+                                    <div class="account-left_comments">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>22</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-right">
+                            <div class="account-right__top">Image upload</div>
+                            <div class="account-right__bottom">11-04-2016</div>
+                        </div>
+                    </div>
+                    <div class="account-list__item">
+                        <div class="account-image">
+                            <img width="86" height="86" src="img/image8.webp" alt="">
+                        </div>
+                        <div class="account-left">
+                            <div class="account-left__top">
+                                <div class="account-left_today">
+                                    Today
+                                </div>
+                                <div class="account-left_date">
+                                    9-08-2016
+                                </div>
+                            </div>
+                            <div class="account-left__bottom">
+                                <div class="account-left__bottom--first">
+                                    <div class="account-left_likes">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M1.5 6.3C1.49991 5.76177 1.6071 5.22893 1.8153 4.73261C2.02351 4.23629 2.32855 3.78644 2.71261 3.40937C3.09667 3.03229 3.55203 2.73555 4.05209 2.53649C4.55215 2.33742 5.08687 2.24003 5.625 2.25C6.26172 2.24662 6.89189 2.3786 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.75C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.3786 11.7383 2.24662 12.375 2.25C12.9131 2.24003 13.4479 2.33742 13.9479 2.53649C14.448 2.73555 14.9033 3.03229 15.2874 3.40937C15.6714 3.78644 15.9765 4.23629 16.1847 4.73261C16.3929 5.22893 16.5001 5.76177 16.5 6.3C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>128</span>
+                                    </div>
+                                    <div class="account-left_comments">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>31</span>
+                                    </div>
+                                </div>
+                                <div class="account-left__bottom--second">
+                                    <div class="account-left_likes">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M1.5 6.3C1.49991 5.76177 1.6071 5.22893 1.8153 4.73261C2.02351 4.23629 2.32855 3.78644 2.71261 3.40937C3.09667 3.03229 3.55203 2.73555 4.05209 2.53649C4.55215 2.33742 5.08687 2.24003 5.625 2.25C6.26172 2.24662 6.89189 2.3786 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.75C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.3786 11.7383 2.24662 12.375 2.25C12.9131 2.24003 13.4479 2.33742 13.9479 2.53649C14.448 2.73555 14.9033 3.03229 15.2874 3.40937C15.6714 3.78644 15.9765 4.23629 16.1847 4.73261C16.3929 5.22893 16.5001 5.76177 16.5 6.3C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>67</span>
+                                    </div>
+                                    <div class="account-left_comments">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>22</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-right">
+                            <div class="account-right__top">Image upload</div>
+                            <div class="account-right__bottom">11-04-2016</div>
+                        </div>
+                    </div>
+                    <div class="account-list__item">
+                        <div class="account-image">
+                            <img width="86" height="86" src="img/image9.webp" alt="">
+                        </div>
+                        <div class="account-left">
+                            <div class="account-left__top">
+                                <div class="account-left_today">
+                                    Today
+                                </div>
+                                <div class="account-left_date">
+                                    9-08-2016
+                                </div>
+                            </div>
+                            <div class="account-left__bottom">
+                                <div class="account-left__bottom--first">
+                                    <div class="account-left_likes">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M1.5 6.3C1.49991 5.76177 1.6071 5.22893 1.8153 4.73261C2.02351 4.23629 2.32855 3.78644 2.71261 3.40937C3.09667 3.03229 3.55203 2.73555 4.05209 2.53649C4.55215 2.33742 5.08687 2.24003 5.625 2.25C6.26172 2.24662 6.89189 2.3786 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.75C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.3786 11.7383 2.24662 12.375 2.25C12.9131 2.24003 13.4479 2.33742 13.9479 2.53649C14.448 2.73555 14.9033 3.03229 15.2874 3.40937C15.6714 3.78644 15.9765 4.23629 16.1847 4.73261C16.3929 5.22893 16.5001 5.76177 16.5 6.3C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>128</span>
+                                    </div>
+                                    <div class="account-left_comments">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>31</span>
+                                    </div>
+                                </div>
+                                <div class="account-left__bottom--second">
+                                    <div class="account-left_likes">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M1.5 6.3C1.49991 5.76177 1.6071 5.22893 1.8153 4.73261C2.02351 4.23629 2.32855 3.78644 2.71261 3.40937C3.09667 3.03229 3.55203 2.73555 4.05209 2.53649C4.55215 2.33742 5.08687 2.24003 5.625 2.25C6.26172 2.24662 6.89189 2.3786 7.47374 2.6372C8.05559 2.8958 8.57584 3.27511 9 3.75C9.42416 3.27511 9.94441 2.8958 10.5263 2.6372C11.1081 2.3786 11.7383 2.24662 12.375 2.25C12.9131 2.24003 13.4479 2.33742 13.9479 2.53649C14.448 2.73555 14.9033 3.03229 15.2874 3.40937C15.6714 3.78644 15.9765 4.23629 16.1847 4.73261C16.3929 5.22893 16.5001 5.76177 16.5 6.3C16.5 10.317 11.7157 13.35 9 15.75C6.29025 13.3297 1.5 10.32 1.5 6.3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>67</span>
+                                    </div>
+                                    <div class="account-left_comments">
+                                        <div class="account-left_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M16.5 3C16.5 2.175 15.825 1.5 15 1.5H3C2.175 1.5 1.5 2.175 1.5 3V12C1.5 12.825 2.175 13.5 3 13.5H13.5L16.5 16.5V3Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <span>22</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-right">
+                            <div class="account-right__top">Image upload</div>
+                            <div class="account-right__bottom">11-04-2016</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="load-more">LOAD MORE</div>
+            </div>
+        </section>
+    </main>
+
+    <div class="bottom-bg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="210" height="368" viewBox="0 0 210 368" fill="none">
+            <path d="M121.932 39.2032C135.932 105.603 148 118.203 156.932 119.703C205.275 127.822 224.932 51.7032 280.932 100.203C336.932 148.703 330.432 411.703 209.432 361.203C88.4321 310.703 83.4321 249.703 73.4321 225.703C65.4321 206.503 39.7655 184.037 27.9322 175.203C-26.8678 126.803 11.4322 58.3699 37.4322 30.2032C59.7655 5.53652 107.932 -27.1968 121.932 39.2032Z" fill="url(#paint0_linear_2_34)"/>
+            <defs>
+                <linearGradient id="paint0_linear_2_34" x1="118" y1="-0.296816" x2="51.686" y2="332.244" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#40AF79" offset="0"/>
+                <stop offset="1" stop-color="#124757"/>
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+    <script src="js/air-datepicker.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
